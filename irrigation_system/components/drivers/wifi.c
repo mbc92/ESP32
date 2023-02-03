@@ -6,7 +6,14 @@ EventGroupHandle_t s_wifi_event_group;
 
 /* For logging*/
 const char *TAG = "irrigation system";
-int s_retry_num = 0;
+static int s_retry_num = 0;
+static char ipAddr[20];
+//static const* IP = "";
+
+char* wifiDrv_getIpAddr()
+{
+    return ipAddr;
+}
 
 static void event_handler(void* arg, esp_event_base_t event_base,
                                 int32_t event_id, void* event_data)
@@ -25,6 +32,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+        sprintf(ipAddr, "%d.%d.%d.%d",  IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
     }
@@ -75,11 +83,9 @@ void fast_scan(void)
     ESP_ERROR_CHECK(esp_wifi_start());
 }
 
-void wifi_init(void)
+void wifiDrv_init(void)
 {
     s_wifi_event_group = xEventGroupCreate();
-
-    ESP_ERROR_CHECK(esp_netif_init());
 
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     esp_netif_create_default_wifi_sta();

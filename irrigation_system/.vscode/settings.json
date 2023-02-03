@@ -6,8 +6,25 @@
     "esp_flash.h": "c",
     "wifi_handler.h": "c",
     "wifi.h": "c",
-    "event_groups.h": "c"
+    "event_groups.h": "c",
+    "stdlib.h": "c",
+    "string_view": "c",
+    "regex": "c",
+    "nvs_flash.h": "c",
+    "mdns.h": "c",
+    "random": "c",
+    "mdns_private.h": "c",
+    "mdns_networking.h": "c",
+    "esp_timer.h": "c",
+    "esp_log.h": "c",
+    "esp_eth.h": "c",
+    "netfwd": "c",
+    "cjson.h": "c",
+    "http_server.h": "c",
+    "json.h": "c",
+    "*.tcc": "c"
   },
   "idf.adapterTargetName": "esp32",
-  "idf.port": "/dev/cu.usbserial-0001"
+  "idf.port": "/dev/cu.usbserial-0001",
+  "idf.portWin": "COM3"
 }

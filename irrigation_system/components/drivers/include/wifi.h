@@ -5,7 +5,8 @@
 #include "freertos/event_groups.h"
 
 
-void wifi_init(void);
+void wifiDrv_init(void);
+char* wifiDrv_getIpAddr();
 void fast_scan(void);
 
 
