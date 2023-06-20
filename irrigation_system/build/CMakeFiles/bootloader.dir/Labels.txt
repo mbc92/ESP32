@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader-complete.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/CMakeFiles/bootloader-complete.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

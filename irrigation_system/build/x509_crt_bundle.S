@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/chris/esp32-repo/ESP32/irrigation_system/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
