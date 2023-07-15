@@ -7,7 +7,6 @@
 
 void wifiDrv_init(void);
 char* wifiDrv_getIpAddr();
-void fast_scan(void);
 
 /* The event group allows multiple bits for each event, but we only care about two events:
  * - we are connected to the AP with an IP

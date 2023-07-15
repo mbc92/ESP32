@@ -12,6 +12,9 @@ esp_err_t mdnsService_lookupMdnsService(const char* u8ServiceName, const char* u
         // Call MDNS driver to lookup service and report back. 
         mdns_result_t results;
         bServiceFound = find_mdns_service(u8ServiceName, u8Proto, &results);
+    }else
+    {
+        tRetVal = ESP_FAIL;
     }
 
     // Set output parameter

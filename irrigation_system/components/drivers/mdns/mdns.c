@@ -5159,7 +5159,7 @@ esp_err_t mdns_unregister_netif(esp_netif_t *esp_netif)
 }
 
 
-esp_err_t mdns_init(void)
+esp_err_t mdnsDrv_init(void)
 {
     esp_err_t err = ESP_OK;
 
@@ -6313,7 +6313,7 @@ void mdns_print_results(mdns_result_t * results){
 void start_mdns_service(char* hostname)
 {
     //initialize mDNS service
-    esp_err_t err = mdns_init();
+    esp_err_t err = mdnsDrv_init();
     if (err) {
         printf("MDNS Init failed: %d\n", err);
         return;
@@ -6346,15 +6346,18 @@ bool find_mdns_service(const char * service_name, const char * proto,  mdns_resu
     return status;
 }
 // -- API to add a service
-void add_mdns_services(const char * service_name, const char * proto, mdns_txt_item_t *txt_input, int length)
+esp_err_t add_mdns_services(const char * service_name, const char * proto, mdns_txt_item_t *txt_input, int length)
 {
+    esp_err_t tRetVal = ESP_OK;
     //add our services
-    mdns_service_add(NULL, service_name, proto, 80, NULL, 0);
+    tRetVal = mdns_service_add(NULL, service_name, proto, 80, NULL, 0);
 
     //NOTE: services must be added before their properties can be set
     //use custom instance for the web server
-    mdns_service_instance_name_set("_http", "_tcp", "Jhon's ESP32 Web Server");
+    tRetVal = mdns_service_instance_name_set("_http", "_tcp", "Jhon's ESP32 Web Server");
 
     //set txt data for service (will free and replace current data)
-    mdns_service_txt_set(service_name, proto, txt_input, length);
+    tRetVal = mdns_service_txt_set(service_name, proto, txt_input, length);
+
+   return (tRetVal == ESP_FAIL ? ESP_FAIL : ESP_OK);
 }

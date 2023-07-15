@@ -1,8 +1,8 @@
-# Install script for directory: /Users/chris/esp/esp-idf
+# Install script for directory: C:/Users/Chris/esp/esp-idf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bootloader")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,101 +34,101 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/chris/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/Chris/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/xtensa/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/xtensa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/newlib/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/newlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/soc/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/hal/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/hal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/efuse/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/efuse/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/log/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/log/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/freertos/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/freertos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/chris/esp32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/main/cmake_install.cmake")
+  include("C:/Users/Chris/OneDrive/Documenten/ESP32-repo/ESP32/irrigation_system/build/bootloader/esp-idf/main/cmake_install.cmake")
 endif()
 

@@ -58,33 +58,9 @@ esp_err_t httpDrv_register_uri_handler(httpd_handle_t handle,
     return rVal;
 }
 
-httpd_handle_t httpDrv_start_webserver(bool bIsMaster)
+esp_err_t httpDrv_startWebserver(httpd_handle_t* tServerHandle)
 {
-    httpd_handle_t server = NULL;
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.lru_purge_enable = true;
-
-    // Start the httpd server
-    if (httpd_start(&server, &config) == ESP_OK) {
-
-        // Set URI handlers
-        //ESP_LOGI("http_server", "Registering URI handlers");
-
-        // // If this ESP unit is the master node we will enable the getMaster route for other nodes to retrieve info form
-        // if (isMaster)
-        // {   char* ipAddr = wifiDrv_getIpAddr();
-        //     sprintf(json, "{\"ip_address\":\"%s\",\"name\":\"master\"}", ipAddr);
-        //     httpd_register_uri_handler(server, &getMaster);
-        // }
-        // construct the homepage
-        //constructPage();
-
-        //httpd_register_uri_handler(server, &getHome);
-
-        //httpd_register_uri_handler(server, &hello);
-        return server;
-    }
-
-    ESP_LOGI("http_server", "Error starting server!");
-    return NULL;
+    return httpd_start(tServerHandle, &config);
 }

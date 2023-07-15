@@ -1,3 +1,3 @@
 #include "nvs_flash.h"
 
-void flashDrv_init();
+esp_err_t flashDrv_init();

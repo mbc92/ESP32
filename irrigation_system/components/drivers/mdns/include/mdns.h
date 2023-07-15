@@ -106,7 +106,7 @@ typedef void (*mdns_query_notify_t)(mdns_search_once_t *search);
  *     - ESP_ERR_NO_MEM on memory error
  *     - ESP_FAIL when failed to start mdns task
  */
-esp_err_t mdns_init(void);
+esp_err_t mdnsDrv_init(void);
 
 /**
  * @brief  Stop and free mDNS server
@@ -810,7 +810,7 @@ void start_mdns_service(char* hostname);
  */
 bool find_mdns_service(const char * service_name, const char * proto,  mdns_result_t * results);
 
-void add_mdns_services(const char * service_name, const char * proto, mdns_txt_item_t *txt_input, int length);
+esp_err_t add_mdns_services(const char * service_name, const char * proto, mdns_txt_item_t *txt_input, int length);
 void mdns_print_results(mdns_result_t * results);
 
 
